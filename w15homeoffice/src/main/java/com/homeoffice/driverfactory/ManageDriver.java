@@ -1,6 +1,6 @@
 package com.homeoffice.driverfactory;
 
-import com.nopcommerce.propertyreader.PropertyReader;
+import com.homeoffice.propertyreader.PropertyReader;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -18,6 +18,7 @@ import java.time.Duration;
 public class ManageDriver {
 
     public static WebDriver driver;
+    private PropertyReader PropertyReader;
     public String baseUrl = PropertyReader.getInstance().getProperty("baseUrl");
    // private static final ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
